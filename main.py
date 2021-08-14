@@ -35,7 +35,7 @@ boton_buscar = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CS
 print("obtengo la informacion de la web")
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 
-# listar enlaces
+# listar enlaces por el momento es texto
 print("guardando enlaces")
 lista_enlaces = []
 enlaces = soup.findAll('h3', attrs={'class':'LC20lb DKV0Md'})
